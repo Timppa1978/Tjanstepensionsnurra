@@ -108,7 +108,7 @@ avtal = st.sidebar.selectbox(
     index=0
 )
 
-startkapital = st.sidebar.number_input("Startkapital (kr)", value=2_200_000, step=100000)
+startkapital = st.sidebar.number_input("Startkapital (kr)", value=1_200_000, step=100000)
 manadslon = st.sidebar.number_input("Månadslön (kr)", value=50000, step=1000)
 avkastning = st.sidebar.number_input("Avkastning (% per år)", value=8.0, step=0.1)
 ar = st.sidebar.number_input("Antal år", value=13, step=1)

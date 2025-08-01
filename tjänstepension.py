@@ -3,7 +3,8 @@
 # 2. Navigera till mappen där filen ligger, t.ex.:
 #    cd C:\Users\Gräddskålen
 # 3. Kör programmet:
-#    python -m streamlit run tjänstepension.py
+#    
+
 
 import streamlit as st
 import pandas as pd
@@ -108,10 +109,10 @@ avtal = st.sidebar.selectbox(
 )
 
 startkapital = st.sidebar.number_input("Startkapital (kr)", value=2_200_000, step=100000)
-manadslon = st.sidebar.number_input("Månadslön (kr)", value=60000, step=1000)
+manadslon = st.sidebar.number_input("Månadslön (kr)", value=50000, step=1000)
 avkastning = st.sidebar.number_input("Avkastning (% per år)", value=8.0, step=0.1)
 ar = st.sidebar.number_input("Antal år", value=13, step=1)
-lonevaxling = st.sidebar.number_input("Löneväxling (kr/mån)", value=1000, step=500)
+lonevaxling = st.sidebar.number_input("Löneväxling (kr/mån)", value=500, step=500)
 ag_tillagg = st.sidebar.number_input("AG-tillägg (%)", value=6.0, step=0.1)
 lonetillvaxt = st.sidebar.number_input("Lönetillväxt (% per år)", value=2.0, step=0.1)
 
